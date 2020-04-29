@@ -1,0 +1,116 @@
+.projects {
+    nav {
+        position: sticky;
+        width: 100%;
+        display: block;
+        background-color: #0f6188;
+
+        @media only screen and (min-width :720px) {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .container {
+            position: relative;
+            display: inline-block;
+            margin: 10px auto;
+
+            @media only screen and (min-width :720px) {
+                margin: 0;
+            }
+
+            .button {
+                padding: 0;
+                width: 50px;
+                border: 0;
+                color: #333;
+                cursor: pointer;
+                outline: 0;
+                font-size: 25px;
+            }
+
+            .dropdown {
+                position: absolute;
+                top: 0;
+                left: 42px;
+                width: 180px;
+                z-index: 2;
+                border: 1px solid rgba(0, 0, 0, 0.04);
+                box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+
+                @media only screen and (min-width :720px) {
+                    top: 100%;
+                    left: 0;
+                }
+
+                select {
+                    font-size: 16px;
+                    padding: 5px;
+                    top: 42px;
+                    left: 6px;
+                    @media only screen and (min-width :720px) {
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+
+        }
+
+        .navbarText {
+            display: block;
+            margin: 0 10px;
+
+            @media only screen and (min-width :720px) {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+            }
+
+
+            button {
+                margin: 10px auto;
+                width: 50%;
+
+                @media only screen and (min-width :720px) {
+                    width: 100%;
+                    margin: 15px;
+                }
+
+                a {
+                    color: #fff;
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .name-status {
+        display: block;
+        max-width: 1200px;
+        margin: 10px auto;
+        width: 90%;
+        @media only screen and (min-width :720px) {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .project-heading,
+        .project-status {
+            display: inline-block;
+            margin: 15px 25px;
+            color: #0f6188;
+            font-size: 25px;
+            font-weight: 500;
+            @media only screen and (min-width :720px) {
+                font-size: 30px;
+                width: 50%;
+
+            }
+        }
+    }
+
+
+}

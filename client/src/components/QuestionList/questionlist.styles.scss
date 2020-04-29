@@ -1,0 +1,33 @@
+.question-answer{   
+    max-width: 1200px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 25px;
+    background-color: #8080800d;
+    @media only screen and (min-width :720px) {
+        padding: 20px 50px;
+
+    }
+
+    .question-item{
+      
+        .question{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .answer,.priority,.category{
+            font-size: 18px;
+        }
+         button{
+            display: flex;
+            max-width: 130px;
+            width: 100%;
+             margin: 5px;
+        }
+    }
+    .add-button{
+        width: 100%;
+        display: flex;
+        max-width: 130px;
+    }
+}
